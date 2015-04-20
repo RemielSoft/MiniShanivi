@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1FC85C25-34EB-4FBB-92AC-AD288AFE13BB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessAccessLayer</RootNamespace>
+    <AssemblyName>BusinessAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\RequiredAssemblies\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging">
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging.Database">
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseBL.cs" />
+    <Compile Include="BrandBL.cs" />
+    <Compile Include="CompanyWorkOrderBL.cs" />
+    <Compile Include="ContractorBL.cs" />
+    <Compile Include="Invoice\ContractorInvoiceBL.cs" />
+    <Compile Include="Invoice\MaterialConsumptionNoteBAL.cs" />
+    <Compile Include="Invoice\SupplierInvoiceBL.cs" />
+    <Compile Include="IssueDemandVoucherBL.cs" />
+    <Compile Include="PaymentBL.cs" />
+    <Compile Include="Quality\IssueMaterialBL.cs" />
+    <Compile Include="Quality\ReceiveMaterialCompanyWorkOrderBL.cs" />
+    <Compile Include="Quality\ReturnMaterialBL.cs" />
+    <Compile Include="Quality\ReturnMaterialContractorBL.cs" />
+    <Compile Include="Quality\SupplierRecieveMaterialBAL.cs" />
+    <Compile Include="QuotationBL.cs" />
+    <Compile Include="DeliveryScheduleBL.cs" />
+    <Compile Include="DepartmentBL.cs" />
+    <Compile Include="DocumentBL.cs" />
+    <Compile Include="GroupBL.cs" />
+    <Compile Include="ItemBL.cs" />
+    <Compile Include="ItemCategoryBL.cs" />
+    <Compile Include="ItemModelBL.cs" />
+    <Compile Include="ItemStockBL.cs" />
+    <Compile Include="MetaDataBL.cs" />
+    <Compile Include="PaymentTermBL.cs" />
+    <Compile Include="ProjectBAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchBAL.cs" />
+    <Compile Include="StoreBL.cs" />
+    <Compile Include="SupplierBL.cs" />
+    <Compile Include="TaxBL.cs" />
+    <Compile Include="TermAndConditionBL.cs" />
+    <Compile Include="UserBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{571293CD-713B-4C54-A43D-E57DD84300C4}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocumentObjectModel\DocumentObjectModel.csproj">
+      <Project>{3C4C21D4-22F6-4136-9F50-CD0FABE899BE}</Project>
+      <Name>DocumentObjectModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Master\" />
+    <Folder Include="Quotaion\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,168 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  color: #bebebe;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 0;
+}
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height:100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+a{
+	text-decoration: none;
+	
+}
+a:hover{
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4{
+	font-family: Arial, sans-serif;
+	color: #444444;
+}
+
+
+ .button{
+	background: #F3F3F3;
+	border: 1px solid #DCDCDC;
+	border-radius: 2px;
+	color: #444444;
+	cursor: pointer;
+	display: inline-block;
+	font: 700 11px Tahoma, Arial, sans-serif;
+	margin:20px 100px 0px 0px;
+	padding: 5px 7px 5px 7px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #FFFFFF;
+}
+.button:hover{
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	border-right-color: #999999;
+	border-top-color: #999999;
+	color: #333333;
+	text-decoration: none;
+}
+
+.wrap
+{
+     position:absolute;
+     top:5%;
+      right:10%;
+	margin: 0 auto;
+	width: 500px;
+	height:400px;
+	z-index:10001;
+	
+	
+}
+
+#content{
+	margin: 60px 0 10px 0;
+	z-index:10001;
+}
+
+/* CONTENT MAIN START */
+
+#content #main
+{
+	float: right;
+	margin: 0 0 12px 0;
+	width: 500px;
+	height:400px;
+	z-index:10001;
+	
+}
+#main .full_w{
+	background: #343536;
+	 
+	border: 2px solid #DCDDE1;
+	border-radius: 5px;
+	webkit-box-shadow:  2px 2px 0px 1px rgba(235, 235, 235, 1);
+	moz-box-shadow:  2px 2px 0px 1px rgba(235, 235, 235, 1);
+	box-shadow:  2px 2px 0px 1px rgba(235, 235, 235, 1);
+	color: #fff;
+	margin: 0 0 5px 0;
+	height:200px;
+	z-index:10001;
+}
+.DivChangePass
+{
+    position:absolute; 
+    float:right; 
+    margin-left: 350px;
+    margin-right: 0px;
+    margin-top: -63px;
+}
+.ChangePass
+{
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+}
+.ChangePass:hover
+{
+    
+    color:#fff;
+    text-decoration:underline;
+}
+
+/* CONTENT MAIN FORM */
+
+
+
+#main form{
+	margin: 20px;
+}
+#main form .element{
+	clear: both;
+	border-bottom: 1px dashed #ededed;
+	
+	margin: 0;
+	padding: 10px 10px;
+}
+#main form label{
+	color: #fffff;
+	
+	font-size: 11px;
+	font-weight: bold;
+	margin: -13px 0 0px 12px;
+	padding: 0 10px 0 12px;
+	
+}
+
+#main .text{
+	background: #FFFFFF;
+	border: 3px solid #343536;
+	border-radius: 3px;
+	font-size: 11px;
+	
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	padding: 5px 5px 5px 5px;
+	width:250px;
+	z-index:10001;
+}
+.chkbox
+{
+    
+    padding:10px 0px 0px 103px;
+    
+    
+    
+}

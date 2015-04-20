@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ERP.master.cs" Inherits="MiniERP.Masters.ERP" %>
+
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+<!DOCTYPE html >
+<html>
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Scripts/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <div id="header">
+        <a href="/Home.aspx">
+            <img id="ImgLogo" src="../Images/ERP_hedder.png" class="imglogo" /></a>
+        <%--<h1 class="site_title"><a href="index.html">Admin Home</a></h1>--%>
+        <div class="btn_view_site">
+            <asp:LoginStatus ID="LoginStatus1" runat="server" CssClass=" button_colorLOGIN green"
+                OnLoggedOut="LoginStatus1_LoggedOut"></asp:LoginStatus>
+        </div>
+        <div class="section_title">
+            Welcome:
+            <asp:LoginName ID="LoginName1" CssClass="LoginName" runat="server" />
+        </div>
+    </div>
+    <!-- end of header bar -->
+    <div id="secondary_bar">
+    </div>
+    <!-- end of secondary bar -->
+    <div id="sidebar">
+        <ul id="navmenu-v">
+            <li id="liQuotation" runat="server"><a href="#">Quotation <span style="color: #FEB012">
+                +</span></a>
+                <ul>
+                    <li class="icn_add_user" id="liContractorQuotation" runat="server"><a href="/Quotation/ContractorQuotation.aspx">
+                        Contractor Purchase Order</a></li>
+                    <li class="icn_add_user" id="liCQuotationApproval" runat="server"><a href="/Quotation/ContractorQuotationApproval.aspx">
+                        Contractor Purchase Order Approval</a></li>
+                    <li class="icn_add_user" id="liViewContractorQuotation" runat="server"><a href="/Quotation/ViewContractorQuotation.aspx">
+                        View/Generate Contractor Purchase Order</a></li>
+                    <li class="icn_view_users" id="liSupplierQuotation" runat="server"><a href="/Quotation/SupplierQuotation.aspx">
+                        Supplier Purchase Order</a></li>
+                    <li class="icn_view_users" id="liSQuotationApproval" runat="server"><a href="/Quotation/SupplierQuotationApproval.aspx">
+                        Supplier Purchase Order Approval</a></li>
+                    <li class="icn_view_users" id="liViewSupplierQuotation" runat="server"><a href="/Quotation/ViewSupplierQuotation.aspx">
+                        View/Generate Supplier Purchase Order</a></li>
+                </ul>
+            </li>
+            <li id="liPurchase" runat="server"><a href="#">Purchase <span style="color: #FEB012">
+                +</span></a>
+                <ul>
+                    <li class="icn_folder" id="liViewContractorWorkOrder" runat="server"><a href="/PurchaseOrder/ViewContractorPurchaseOrder.aspx">
+                        View Contractor Work Order</a></li>
+                    <li class="icn_photo" id="liViewSupplierPurchaseOrder" runat="server"><a href="/PurchaseOrder/ViewSupplierPurchaseOrder.aspx">
+                        View Supplier Purchase Order</a></li>
+                </ul>
+            </li>
+            <li id="liInvoice" runat="server"><a href="#">Invoice <span style="color: #FEB012">+</span></a>
+                <ul>
+                    <li class="icn_folder" id="liContractorInvoice" runat="server"><a href="/Invoice/ContractorInvoice.aspx">
+                        Contractor Invoice</a></li>
+                    <li class="icn_folder" id="liCInvoiceApproval" runat="server"><a href="/Invoice/ContractorInvoiceApproval.aspx">
+                        Contractor Invoice Approval</a></li>
+                    <li class="icn_folder" id="liViewContratorInvoice" runat="server"><a href="/Invoice/ViewContractorInvoice.aspx">
+                        View/Generate Contractor Invoice</a></li>
+                    <li class="icn_photo" id="liSupplierInvoice" runat="server"><a href="/Invoice/SupplierInvoice.aspx">
+                        Supplier Invoice</a></li>
+                    <li class="icn_photo" id="liSInvoiceApproval" runat="server"><a href="/Invoice/SupplierInvoiceApproval.aspx">
+                        Supplier Invoice Approval</a></li>
+                    <li class="icn_photo" id="liViewSupplierInvoice" runat="server"><a href="/Invoice/ViewSupplierInvoice.aspx">
+                        View/Generate Supplier Invoice</a></li>
+                    <li class="icn_folder" id="liMaterialConsumptionNote" runat="server"><a href="/Invoice/MaterialConsumptionNote.aspx">
+                        Material Consumption Note</a></li>
+                    <li class="icn_folder" id="liMaterialReconcilationReport" runat="server"><a href="/Invoice/MaterialReconciliationReport.aspx">
+                        Material Reconciliation Report </a></li>
+                </ul>
+            </li>
+            <li id="liPayment" runat="server"><a href="#">Payment <span style="color: #FEB012">+</span></a>
+                <ul>
+                    <li class="icn_folder" id="liContractorPayment" runat="server"><a href="/Payment/ContractorPayment.aspx">
+                        Contractor Payment</a></li>
+                    <li class="icn_folder" id="liCPaymentApproval" runat="server"><a href="/Payment/ContractorPaymentApproval.aspx">
+                        Contractor Payment Approval</a></li>
+                    <li class="icn_folder" id="liViewContractorPayment" runat="server"><a href="/Payment/ViewContractorPayment.aspx">
+                        View/Generate Contractor Payment</a></li>
+                    <li class="icn_photo" id="liSupplierPayment" runat="server"><a href="/Payment/SupplierPayment.aspx">
+                        Supplier Payment</a></li>
+                    <li class="icn_photo" id="liSPaymentApproval" runat="server"><a href="/Payment/SupplierPaymentApproval.aspx">
+                        Supplier Payment Approval</a></li>
+                    <li class="icn_photo" id="liViewSupplierPayment" runat="server"><a href="/Payment/ViewSupplierPayment.aspx">
+                        View/Generate Supplier Payment</a></li>
+                </ul>
+            </li>
+            <li id="liCompany" runat="server"><a href="#">Company <span style="color: #FEB012">+</span></a>
+                <ul>
+                    <li class="icn_folder"><a href="/Company/CompanyWorkOrder.aspx">Company Work Order</a></li>
+                    <li class="icn_folder" id="liCompanyWorkOrderApproval" runat="server"><a href="/Company/CompanyWorkOrderApproval.aspx">
+                        Company Work Order Approval </a></li>
+                    <li class="icn_folder"><a href="/Company/ViewCompanyWorkOrder.aspx">View/Generate Company
+                        Work Order</a></li>
+                </ul>
+            </li>
+            <li id="liQuality" runat="server"><a href="#">Quality <span style="color: #FEB012">+</span></a>
+                <ul>
+                    <li class="icn_folder" id="liQualityReceiveMaterialCompanyWorkOrder" runat="server">
+                        <a href="/Quality/ReceiveMaterialCompanyWorkOrder.aspx">Company Work Order Receive Material
+                        </a></li>
+                    <li class="icn_folder" id="liQualityViewReceiveMaterialCompanyWorkOrder" runat="server">
+                        <a href="/Quality/ViewReceiveMaterialCompanyWorkOrder.aspx">View/Generate Receive Material
+                            CWO</a></li>
+                    <li class="icn_folder" id="liQualitySupplierReceiveMaterialSRM" runat="server"><a
+                        href="/Quality/SupplierReceiveMaterial.aspx">Receive Material Supplier Purchase
+                        Order</a></li>
+                    <li class="icn_folder" id="liQualityViewSupplierReceiveMaterial" runat="server"><a
+                        href="/Quality/ViewSupplierReceiveMaterial.aspx">View/Generate Receive Material
+                        SPO</a></li>
+                    <li class="icn_folder" id="liQualityDemandIssueVoucher" runat="server"><a href="/Quality/DemandIssueVoucher.aspx">
+                        Issue Demand Voucher</a></li>
+                    <li class="icn_folder" id="liQualityViewDemandIssueVoucher" runat="server"><a href="/Quality/ViewDemandIssueVoucher.aspx">
+                        View/Generate Issue Demand Voucher</a></li>
+                    <li class="icn_photo" id="liQualityIssuingMaterial" runat="server"><a href="/Quality/IssuingMaterial.aspx">
+                        Issue Material</a></li>
+                    <li class="icn_photo" id="liQualityViewIssueMaterial" runat="server"><a href="/Quality/ViewIssueMaterial.aspx">
+                        View/Generate Issue Material</a></li>
+                    <li class="icn_folder" id="liQualityReturnMaterial" runat="server"><a href="/Quality/ReturnMaterial.aspx">
+                        Return Material Note</a></li>
+                    <li class="icn_folder" id="liQualityViewReturnMaterial" runat="server"><a href="/Quality/ViewReturnMaterial.aspx">
+                        View/Generate Return Material Note</a></li>
+                    <li class="icn_folder" id="liQualityReturnMaterialContractor" runat="server"><a href="../Quality/ReturnMaterialContractor.aspx">
+                        Return Material Contractor</a></li>
+                    <li class="icn_folder" id="liQualityViewReturnMaterialContractor" runat="server"><a
+                        href="../Quality/ViewReturnMaterialContractor.aspx">View Return Material Contractor</a></li>
+                </ul>
+            </li>
+            <li id="liERPReports" runat="server"><a href="#">Report <span style="color: #FEB012">
+                +</span></a>
+                <ul>
+                    <li class="icn_folder" id="liReportPendingContractorPayment" runat="server"><a href="/SSRReport/PendingContractorPaymentRpt.aspx">
+                        Pending Contractor Payment</a></li>
+                    <li class="icn_photo" id="liReportPendindSupplierPayment" runat="server"><a href="/SSRReport/PendingSupplierPaymentRpt.aspx">
+                        Pending Supplier Payment</a></li>
+                    <%--<li class="icn_folder"><a href="/SSRReport/RateCardReport.aspx">Items RateCard Report</a></li>--%>
+                    <li class="icn_folder" id="liReportItemstockRpt" runat="server"><a href="/SSRReport/ItemStockRpt.aspx">
+                        Item Stock Report</a></li>
+                    <li class="icn_folder" id="liItemDetailsReport" runat="server"><a href="/SSRReport/ItemDetail.aspx">
+                        Material Reconciliation Report</a></li>
+                </ul>
+            </li>
+            <li id="liAdministrator" runat="server"><a href="#">Administrator <span style="color: #FEB012">
+                +</span></a>
+                <ul>
+                    <li class="icn_new_article" id="liManageContractor" runat="server"><a href="/Admin/ManageContractor.aspx">
+                        Manage Contractor</a></li>
+                    <li class="icn_add_user" id="liManageSupplier" runat="server"><a href="/Admin/ManageSupplier.aspx">
+                        Manage Supplier</a></li>
+                    <li class="icn_add_user" id="licheckPaymentStatus" runat="server"><a href="/Admin/CheckPaymentStatus.aspx">
+                       Check Payment Status</a></li>
+                    <li class="icn_add_user" id="liManageItemCategory" runat="server"><a href="/Admin/ManageItemCategory.aspx">
+                        Manage Category Level</a></li>
+                    <li class="icn_tags" id="liManageItem" runat="server"><a href="/Admin/ManageItem.aspx">
+                        Manage Item </a></li>
+                    <li class="icn_view_users" id="liManageItemStock" runat="server"><a href="/Admin/ManageItemStock.aspx">
+                        Manage Item Stock</a></li>
+                    <li class="icn_view_users" id="liManageUser" runat="server"><a href="/Admin/ManageUser.aspx">
+                        Manage User</a></li>
+                    <li class="icn_add_user" id="liManageTermsAndCondition" runat="server"><a href="../Admin/GeneralTermsAndConditions.aspx">
+                        General Terms And Conditions</a></li>
+                    <%--<li class="icn_view_users"><a href="/Admin/Taxes.aspx">Taxes</a></li>--%>
+                    <li class="icn_edit_article" id="liManageDepartment" runat="server"><a href="/Admin/ManageDepartment.aspx">
+                        Manage Department</a></li>
+                    <li class="icn_categories" id="liManageServiceDetails" runat="server"><a href="/Admin/ManageServiceDetail.aspx">
+                        Manage Service Details</a></li>
+                    <li class="icn_categories" id="liManageGroup" runat="server"><a href="/Admin/ManageGroup.aspx">
+                        Manage Group</a></li>
+                    <li class="icn_categories" id="liChangePassword" runat="server"><a href="../Admin/ChangePassword.aspx">
+                        Change Password</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- end of sidebar -->
+    <div id="main">
+        <asp:ScriptManager ID="ScriptManager2" runat="server" EnablePartialRendering="true" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <table class="footer">
+        <tr>
+            <td>
+                <p>
+                    Copyright &copy; 2012 ERP Admin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Powered
+                    by <a href="#"><b>Team One</b></a></p>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

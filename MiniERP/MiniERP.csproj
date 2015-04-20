@@ -1,0 +1,1278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{72E78E14-1CAB-4F32-80C4-5C5A6D985C49}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiniERP</RootNamespace>
+    <AssemblyName>MiniERP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\RequiredAssemblies\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=4.1.0.0, Culture=neutral, PublicKeyToken=e44a2bc38ed2c13c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.EnterpriseLibrary.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\RequiredAssemblies\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ChangePassword.aspx" />
+    <Content Include="Admin\CheckPaymentStatus.aspx" />
+    <Content Include="Admin\ManageBrand.aspx" />
+    <Content Include="Admin\ManageContractor.aspx" />
+    <Content Include="Admin\ManageDepartment.aspx" />
+    <Content Include="Admin\ManageGroup.aspx" />
+    <Content Include="Admin\ManageItem.aspx" />
+    <Content Include="Admin\ManageItemCategory.aspx" />
+    <Content Include="Admin\ManageItemModel.aspx" />
+    <Content Include="Admin\ManageItemStock.aspx" />
+    <Content Include="Admin\ManageProject.aspx" />
+    <Content Include="Admin\ManageServiceDetail.aspx" />
+    <Content Include="Admin\ManageStore.aspx" />
+    <Content Include="Admin\ManageSupplier.aspx" />
+    <Content Include="Admin\ManageUser.aspx" />
+    <Content Include="Admin\SearchItemStock.aspx" />
+    <Content Include="Admin\Taxes.aspx" />
+    <Content Include="Admin\GeneralTermsAndConditions.aspx" />
+    <Content Include="Admin\ViewUserMaster.aspx" />
+    <Content Include="App_Data\PageDictionary.xml" />
+    <Content Include="Company\CompanyWorkOrder.aspx" />
+    <Content Include="Company\CompanyWorkOrderApproval.aspx" />
+    <Content Include="Company\Parts\CompanyWorkOrder.ascx" />
+    <Content Include="Company\ViewCompanyWorkOrder.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\4.jpg" />
+    <Content Include="Images\ajax_loader.gif" />
+    <Content Include="Images\breadcrumb_divider.png" />
+    <Content Include="Images\btn_submit.png" />
+    <Content Include="Images\btn_submit_2.png" />
+    <Content Include="Images\btn_view_site.png" />
+    <Content Include="Images\cancel.jpg" />
+    <Content Include="Images\Cash_register.png" />
+    <Content Include="Images\close_box_red.png" />
+    <Content Include="Images\delete.jpg" />
+    <Content Include="Images\Edit_icon.gif" />
+    <Content Include="Images\ERPReportBottom.jpg" />
+    <Content Include="Images\ERPReportRight.jpg" />
+    <Content Include="Images\ERPReportTop.jpg" />
+    <Content Include="Images\ERP_hedder.jpg" />
+    <Content Include="Images\ERP_hedder.png" />
+    <Content Include="Images\google_colour.png" />
+    <Content Include="Images\google_gray.png" />
+    <Content Include="Images\header_bg.png" />
+    <Content Include="Images\header_shadow.png" />
+    <Content Include="Images\hedder.jpg" />
+    <Content Include="Images\Home.jpg" />
+    <Content Include="Images\Homeicon.png" />
+    <Content Include="Images\Homeicon1.png" />
+    <Content Include="Images\icn_add_user.png" />
+    <Content Include="Images\icn_alert_error.png" />
+    <Content Include="Images\icn_alert_info.png" />
+    <Content Include="Images\icn_alert_success.png" />
+    <Content Include="Images\icn_alert_warning.png" />
+    <Content Include="Images\icn_audio.png" />
+    <Content Include="Images\icn_categories.png" />
+    <Content Include="Images\icn_edit.png" />
+    <Content Include="Images\icn_edit_article.png" />
+    <Content Include="Images\icn_folder.png" />
+    <Content Include="Images\icn_jump_back.png" />
+    <Content Include="Images\icn_logout.png" />
+    <Content Include="Images\icn_new_article.png" />
+    <Content Include="Images\icn_photo.png" />
+    <Content Include="Images\icn_profile.png" />
+    <Content Include="Images\icn_search.png" />
+    <Content Include="Images\icn_security.png" />
+    <Content Include="Images\icn_settings.png" />
+    <Content Include="Images\icn_tags.png" />
+    <Content Include="Images\icn_trash.png" />
+    <Content Include="Images\icn_user.png" />
+    <Content Include="Images\icn_video.png" />
+    <Content Include="Images\icn_view_users.png" />
+    <Content Include="Images\index_08.jpg" />
+    <Content Include="Images\loading7.gif" />
+    <Content Include="Images\Login.jpg" />
+    <Content Include="Images\loginbg.jpg" />
+    <Content Include="Images\module_footer_bg.png" />
+    <Content Include="Images\pipeline_cunst_header.jpg" />
+    <Content Include="Images\post_message.png" />
+    <Content Include="Images\progressbar.gif" />
+    <Content Include="Images\rupee_symbol.png" />
+    <Content Include="Images\rupee_symbol1.png" />
+    <Content Include="Images\rupee_symbol5.png" />
+    <Content Include="Images\rupee_symbolGrid.png" />
+    <Content Include="Images\save.jpg" />
+    <Content Include="Images\secondary_bar.png" />
+    <Content Include="Images\secondary_bar_shadow.png" />
+    <Content Include="Images\sidebar.png" />
+    <Content Include="Images\sidebar_divider.png" />
+    <Content Include="Images\sidebar_shadow.png" />
+    <Content Include="Images\table_sorter_header.png" />
+    <Content Include="Images\update.jpg" />
+    <Content Include="Images\vission.jpeg" />
+    <Content Include="Invoice\ContractorInvoice.aspx" />
+    <Content Include="Invoice\ContractorInvoiceApproval.aspx" />
+    <Content Include="Invoice\MaterialConsumptionNote.aspx" />
+    <Content Include="Invoice\MaterialReconciliationReport.aspx" />
+    <Content Include="Invoice\Parts\InvoiceApproval.ascx" />
+    <Content Include="Invoice\Parts\InvoiceControls.ascx" />
+    <Content Include="Invoice\Parts\SupplierInvoice.ascx" />
+    <Content Include="Invoice\Parts\ViewInvoice.ascx" />
+    <Content Include="Invoice\SupplierInvoice.aspx" />
+    <Content Include="Invoice\SupplierInvoiceApproval.aspx" />
+    <Content Include="Invoice\ViewContractorInvoice.aspx" />
+    <Content Include="Invoice\ViewSupplierInvoice.aspx" />
+    <Content Include="MyTest.aspx" />
+    <Content Include="Payment\Parts\Payment.ascx" />
+    <Content Include="Payment\Parts\PaymentApproval.ascx" />
+    <Content Include="Payment\Parts\PaymentView.ascx" />
+    <Content Include="Admin\Parts\ServiceDetail.ascx" />
+    <Content Include="Quality\Parts\DemandIssueVoucher.ascx" />
+    <Content Include="Quality\Parts\IssuingMaterial.ascx" />
+    <Content Include="Quality\Parts\ReceiveMaterialCompanyWorkOrder.ascx" />
+    <Content Include="Quality\Parts\ReturnMaterial.ascx" />
+    <Content Include="Quality\ReceiveMaterialCompanyWorkOrder.aspx" />
+    <Content Include="Quality\ReturnMaterialContractor.aspx" />
+    <Content Include="Quality\ViewReceiveMaterialCompanyWorkOrder.aspx" />
+    <Content Include="Quality\ViewReturnMaterialContractor.aspx" />
+    <Content Include="Quotation\Parts\DeliveryScheduleContractor.ascx" />
+    <Content Include="Parts\FileDownload.aspx" />
+    <Content Include="Quotation\Parts\ItemDetails.aspx" />
+    <Content Include="Quotation\Parts\Quotation.ascx" />
+    <Content Include="Quotation\Parts\DeliverySchedule.ascx" />
+    <Content Include="Quotation\Parts\PaymentTerms.ascx" />
+    <Content Include="Quotation\Parts\QuotationApproval.ascx" />
+    <Content Include="Quotation\Parts\ServiceDescription.aspx" />
+    <Content Include="Quotation\Parts\GeneralTermConditions.ascx" />
+    <Content Include="Parts\UploadDocsControl.ascx" />
+    <Content Include="Parts\ViewOrder.ascx" />
+    <Content Include="Quotation\Parts\ViewQuotation.ascx" />
+    <Content Include="Payment\ContractorPaymentApproval.aspx" />
+    <Content Include="Payment\SupplierPaymentApproval.aspx" />
+    <Content Include="Payment\ViewContractorPayment.aspx" />
+    <Content Include="Payment\ViewSupplierPayment.aspx" />
+    <Content Include="PurchaseOrder\CompanyWorkOrder.aspx" />
+    <Content Include="PurchaseOrder\ContractorPurchaseOrderApproval.aspx" />
+    <Content Include="PurchaseOrder\SupplierPurchaseOrderApproval.aspx" />
+    <Content Include="PurchaseOrder\ViewCompanyWorkOrder.aspx" />
+    <Content Include="PurchaseOrder\ViewContractorPurchaseOrder.aspx" />
+    <Content Include="PurchaseOrder\ViewSupplierPurchaseOrder.aspx" />
+    <Content Include="Quality\DemandIssueVoucher.aspx" />
+    <Content Include="Quality\IssuingMaterial.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Payment\ContractorPayment.aspx" />
+    <Content Include="Payment\SupplierPayment.aspx" />
+    <Content Include="PurchaseOrder\ContractorPO WorkFlow.aspx" />
+    <Content Include="PurchaseOrder\ContractorPurchaseOrder.aspx" />
+    <Content Include="PurchaseOrder\DeliverySechedule.aspx" />
+    <Content Include="PurchaseOrder\SupplierPOWorkFlow.aspx" />
+    <Content Include="PurchaseOrder\SupplierPurchaseOrder.aspx" />
+    <Content Include="Quality\ViewDemandIssueVoucher.aspx" />
+    <Content Include="Quality\ViewIssueMaterial.aspx" />
+    <Content Include="Quality\ViewIssueMaterialVoucher.aspx" />
+    <Content Include="Quality\ViewReturnMaterial.aspx" />
+    <Content Include="Quality\ViewSupplierReceiveMaterial.aspx" />
+    <Content Include="Quality\ReturnMaterial.aspx" />
+    <Content Include="Quotation\ContractorQuotation.aspx" />
+    <Content Include="Quotation\ContractorQuotationApproval.aspx" />
+    <Content Include="Quotation\SupplierQuotation.aspx" />
+    <Content Include="Quotation\SupplierQuotationApproval.aspx" />
+    <Content Include="Quotation\ViewContractorQuotation.aspx" />
+    <Content Include="Quotation\ViewSupplierQuotation.aspx" />
+    <Content Include="Scripts\hideshow.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery-1.5.2.min.js" />
+    <Content Include="Scripts\jquery.equalHeight.js" />
+    <Content Include="Scripts\jquery.tablesorter.min.js" />
+    <Content Include="Quality\SupplierReceiveMaterial.aspx" />
+    <Content Include="SSRReport\AdvanceContractorInvoiceReport.aspx" />
+    <Content Include="SSRReport\AdvanceSupplierInvoiceReport.aspx" />
+    <Content Include="SSRReport\CompanyWorkOrderReport.aspx" />
+    <Content Include="SSRReport\ContractorInvoiceReport.aspx" />
+    <Content Include="SSRReport\ContractorPayment.aspx" />
+    <Content Include="SSRReport\ContractorQuotation.aspx" />
+    <Content Include="SSRReport\ContractorWorkOrderReport.aspx" />
+    <Content Include="SSRReport\IssueDemandVoucherReport.aspx" />
+    <Content Include="SSRReport\IssueMaterialReport.aspx" />
+    <Content Include="SSRReport\ItemDetail.aspx" />
+    <Content Include="SSRReport\ItemDetailsReport.aspx" />
+    <Content Include="SSRReport\ItemStockRpt.aspx" />
+    <Content Include="SSRReport\MaterialConsumptionNote.aspx" />
+    <Content Include="SSRReport\PaymentAdvice.aspx" />
+    <Content Include="SSRReport\PendingContractorPaymentRpt.aspx" />
+    <Content Include="SSRReport\PendingSupplierPaymentRpt.aspx" />
+    <Content Include="SSRReport\RateCardReport.aspx" />
+    <Content Include="SSRReport\ReceiveMaterialCWORpt.aspx" />
+    <Content Include="SSRReport\ReceiveMaterialReport.aspx" />
+    <Content Include="SSRReport\ReconsilationRpt.aspx" />
+    <Content Include="SSRReport\ReturnMaterialContractorRpt.aspx" />
+    <Content Include="SSRReport\ReturnMaterialRpt.aspx" />
+    <Content Include="SSRReport\SupplierInvoiceReport.aspx" />
+    <Content Include="SSRReport\SupplierPayment.aspx" />
+    <Content Include="SSRReport\SupplierPurchaseOrderReport.aspx" />
+    <Content Include="SSRReport\SupplierQuotation.aspx" />
+    <Content Include="Styles\layout.css" />
+    <Content Include="Styles\MessageBox.css" />
+    <Content Include="Styles\StyleSheet.css" />
+    <Content Include="Styles\Login.css" />
+    <Content Include="test.aspx" />
+    <Content Include="Test_Control.aspx" />
+    <Content Include="Upload_Documents\2013\ContractorQuotation\1315_1.jpg" />
+    <Content Include="Upload_Documents\2013\SupplierReceiveMaterial\1316_1.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CheckPaymentStatus.aspx.cs">
+      <DependentUpon>CheckPaymentStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CheckPaymentStatus.aspx.designer.cs">
+      <DependentUpon>CheckPaymentStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageBrand.aspx.cs">
+      <DependentUpon>ManageBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageBrand.aspx.designer.cs">
+      <DependentUpon>ManageBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageContractor.aspx.cs">
+      <DependentUpon>ManageContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageContractor.aspx.designer.cs">
+      <DependentUpon>ManageContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageDepartment.aspx.cs">
+      <DependentUpon>ManageDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageDepartment.aspx.designer.cs">
+      <DependentUpon>ManageDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageGroup.aspx.cs">
+      <DependentUpon>ManageGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageGroup.aspx.designer.cs">
+      <DependentUpon>ManageGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageItem.aspx.cs">
+      <DependentUpon>ManageItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageItem.aspx.designer.cs">
+      <DependentUpon>ManageItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageItemCategory.aspx.cs">
+      <DependentUpon>ManageItemCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageItemCategory.aspx.designer.cs">
+      <DependentUpon>ManageItemCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageItemModel.aspx.cs">
+      <DependentUpon>ManageItemModel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageItemModel.aspx.designer.cs">
+      <DependentUpon>ManageItemModel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageItemStock.aspx.cs">
+      <DependentUpon>ManageItemStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageItemStock.aspx.designer.cs">
+      <DependentUpon>ManageItemStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageProject.aspx.cs">
+      <DependentUpon>ManageProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageProject.aspx.designer.cs">
+      <DependentUpon>ManageProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageServiceDetail.aspx.cs">
+      <DependentUpon>ManageServiceDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageServiceDetail.aspx.designer.cs">
+      <DependentUpon>ManageServiceDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageStore.aspx.cs">
+      <DependentUpon>ManageStore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageStore.aspx.designer.cs">
+      <DependentUpon>ManageStore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageSupplier.aspx.cs">
+      <DependentUpon>ManageSupplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageSupplier.aspx.designer.cs">
+      <DependentUpon>ManageSupplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SearchItemStock.aspx.cs">
+      <DependentUpon>SearchItemStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SearchItemStock.aspx.designer.cs">
+      <DependentUpon>SearchItemStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Taxes.aspx.cs">
+      <DependentUpon>Taxes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Taxes.aspx.designer.cs">
+      <DependentUpon>Taxes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GeneralTermsAndConditions.aspx.cs">
+      <DependentUpon>GeneralTermsAndConditions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GeneralTermsAndConditions.aspx.designer.cs">
+      <DependentUpon>GeneralTermsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewUserMaster.aspx.cs">
+      <DependentUpon>ViewUserMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewUserMaster.aspx.designer.cs">
+      <DependentUpon>ViewUserMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyWorkOrder.aspx.cs">
+      <DependentUpon>CompanyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyWorkOrder.aspx.designer.cs">
+      <DependentUpon>CompanyWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\CompanyWorkOrderApproval.aspx.cs">
+      <DependentUpon>CompanyWorkOrderApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\CompanyWorkOrderApproval.aspx.designer.cs">
+      <DependentUpon>CompanyWorkOrderApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\Parts\CompanyWorkOrder.ascx.cs">
+      <DependentUpon>CompanyWorkOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\Parts\CompanyWorkOrder.ascx.designer.cs">
+      <DependentUpon>CompanyWorkOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Company\ViewCompanyWorkOrder.aspx.cs">
+      <DependentUpon>ViewCompanyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Company\ViewCompanyWorkOrder.aspx.designer.cs">
+      <DependentUpon>ViewCompanyWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ContractorInvoice.aspx.cs">
+      <DependentUpon>ContractorInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\ContractorInvoice.aspx.designer.cs">
+      <DependentUpon>ContractorInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ContractorInvoiceApproval.aspx.cs">
+      <DependentUpon>ContractorInvoiceApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\ContractorInvoiceApproval.aspx.designer.cs">
+      <DependentUpon>ContractorInvoiceApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\MaterialConsumptionNote.aspx.cs">
+      <DependentUpon>MaterialConsumptionNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\MaterialConsumptionNote.aspx.designer.cs">
+      <DependentUpon>MaterialConsumptionNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\MaterialReconciliationReport.aspx.cs">
+      <DependentUpon>MaterialReconciliationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\MaterialReconciliationReport.aspx.designer.cs">
+      <DependentUpon>MaterialReconciliationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\Parts\InvoiceApproval.ascx.cs">
+      <DependentUpon>InvoiceApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\Parts\InvoiceApproval.ascx.designer.cs">
+      <DependentUpon>InvoiceApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\Parts\InvoiceControls.ascx.cs">
+      <DependentUpon>InvoiceControls.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\Parts\InvoiceControls.ascx.designer.cs">
+      <DependentUpon>InvoiceControls.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\Parts\SupplierInvoice.ascx.cs">
+      <DependentUpon>SupplierInvoice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\Parts\SupplierInvoice.ascx.designer.cs">
+      <DependentUpon>SupplierInvoice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\Parts\ViewInvoice.ascx.cs">
+      <DependentUpon>ViewInvoice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\Parts\ViewInvoice.ascx.designer.cs">
+      <DependentUpon>ViewInvoice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\SupplierInvoice.aspx.cs">
+      <DependentUpon>SupplierInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\SupplierInvoice.aspx.designer.cs">
+      <DependentUpon>SupplierInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\SupplierInvoiceApproval.aspx.cs">
+      <DependentUpon>SupplierInvoiceApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\SupplierInvoiceApproval.aspx.designer.cs">
+      <DependentUpon>SupplierInvoiceApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ViewContractorInvoice.aspx.cs">
+      <DependentUpon>ViewContractorInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\ViewContractorInvoice.aspx.designer.cs">
+      <DependentUpon>ViewContractorInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\ViewSupplierInvoice.aspx.cs">
+      <DependentUpon>ViewSupplierInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice\ViewSupplierInvoice.aspx.designer.cs">
+      <DependentUpon>ViewSupplierInvoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyTest.aspx.cs">
+      <DependentUpon>MyTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyTest.aspx.designer.cs">
+      <DependentUpon>MyTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Parts\Payment.ascx.cs">
+      <DependentUpon>Payment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Parts\Payment.ascx.designer.cs">
+      <DependentUpon>Payment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Parts\PaymentApproval.ascx.cs">
+      <DependentUpon>PaymentApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Parts\PaymentApproval.ascx.designer.cs">
+      <DependentUpon>PaymentApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Parts\PaymentView.ascx.cs">
+      <DependentUpon>PaymentView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Parts\PaymentView.ascx.designer.cs">
+      <DependentUpon>PaymentView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Parts\ServiceDetail.ascx.cs">
+      <DependentUpon>ServiceDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Parts\ServiceDetail.ascx.designer.cs">
+      <DependentUpon>ServiceDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\Parts\DemandIssueVoucher.ascx.cs">
+      <DependentUpon>DemandIssueVoucher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\Parts\DemandIssueVoucher.ascx.designer.cs">
+      <DependentUpon>DemandIssueVoucher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\Parts\IssuingMaterial.ascx.cs">
+      <DependentUpon>IssuingMaterial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\Parts\IssuingMaterial.ascx.designer.cs">
+      <DependentUpon>IssuingMaterial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\Parts\ReceiveMaterialCompanyWorkOrder.ascx.cs">
+      <DependentUpon>ReceiveMaterialCompanyWorkOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\Parts\ReceiveMaterialCompanyWorkOrder.ascx.designer.cs">
+      <DependentUpon>ReceiveMaterialCompanyWorkOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\Parts\ReturnMaterial.ascx.cs">
+      <DependentUpon>ReturnMaterial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\Parts\ReturnMaterial.ascx.designer.cs">
+      <DependentUpon>ReturnMaterial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ReceiveMaterialCompanyWorkOrder.aspx.cs">
+      <DependentUpon>ReceiveMaterialCompanyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ReceiveMaterialCompanyWorkOrder.aspx.designer.cs">
+      <DependentUpon>ReceiveMaterialCompanyWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ReturnMaterialContractor.aspx.cs">
+      <DependentUpon>ReturnMaterialContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ReturnMaterialContractor.aspx.designer.cs">
+      <DependentUpon>ReturnMaterialContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewReceiveMaterialCompanyWorkOrder.aspx.cs">
+      <DependentUpon>ViewReceiveMaterialCompanyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewReceiveMaterialCompanyWorkOrder.aspx.designer.cs">
+      <DependentUpon>ViewReceiveMaterialCompanyWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewReturnMaterialContractor.aspx.cs">
+      <DependentUpon>ViewReturnMaterialContractor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewReturnMaterialContractor.aspx.designer.cs">
+      <DependentUpon>ViewReturnMaterialContractor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\DeliveryScheduleContractor.ascx.cs">
+      <DependentUpon>DeliveryScheduleContractor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\DeliveryScheduleContractor.ascx.designer.cs">
+      <DependentUpon>DeliveryScheduleContractor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Parts\FileDownload.aspx.cs">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parts\FileDownload.aspx.designer.cs">
+      <DependentUpon>FileDownload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\ItemDetails.aspx.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\ItemDetails.aspx.designer.cs">
+      <DependentUpon>ItemDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\Quotation.ascx.cs">
+      <DependentUpon>Quotation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\Quotation.ascx.designer.cs">
+      <DependentUpon>Quotation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\DeliverySchedule.ascx.cs">
+      <DependentUpon>DeliverySchedule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\DeliverySchedule.ascx.designer.cs">
+      <DependentUpon>DeliverySchedule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\PaymentTerms.ascx.cs">
+      <DependentUpon>PaymentTerms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\PaymentTerms.ascx.designer.cs">
+      <DependentUpon>PaymentTerms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\QuotationApproval.ascx.cs">
+      <DependentUpon>QuotationApproval.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\QuotationApproval.ascx.designer.cs">
+      <DependentUpon>QuotationApproval.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\ServiceDescription.aspx.cs">
+      <DependentUpon>ServiceDescription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\ServiceDescription.aspx.designer.cs">
+      <DependentUpon>ServiceDescription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\GeneralTermConditions.ascx.cs">
+      <DependentUpon>GeneralTermConditions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\GeneralTermConditions.ascx.designer.cs">
+      <DependentUpon>GeneralTermConditions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Parts\UploadDocsControl.ascx.cs">
+      <DependentUpon>UploadDocsControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parts\UploadDocsControl.ascx.designer.cs">
+      <DependentUpon>UploadDocsControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Parts\ViewOrder.ascx.cs">
+      <DependentUpon>ViewOrder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Parts\ViewOrder.ascx.designer.cs">
+      <DependentUpon>ViewOrder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\Parts\ViewQuotation.ascx.cs">
+      <DependentUpon>ViewQuotation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\Parts\ViewQuotation.ascx.designer.cs">
+      <DependentUpon>ViewQuotation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ContractorPaymentApproval.aspx.cs">
+      <DependentUpon>ContractorPaymentApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\ContractorPaymentApproval.aspx.designer.cs">
+      <DependentUpon>ContractorPaymentApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\SupplierPaymentApproval.aspx.cs">
+      <DependentUpon>SupplierPaymentApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\SupplierPaymentApproval.aspx.designer.cs">
+      <DependentUpon>SupplierPaymentApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ViewContractorPayment.aspx.cs">
+      <DependentUpon>ViewContractorPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\ViewContractorPayment.aspx.designer.cs">
+      <DependentUpon>ViewContractorPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ViewSupplierPayment.aspx.cs">
+      <DependentUpon>ViewSupplierPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\ViewSupplierPayment.aspx.designer.cs">
+      <DependentUpon>ViewSupplierPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\CompanyWorkOrder.aspx.cs">
+      <DependentUpon>CompanyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\CompanyWorkOrder.aspx.designer.cs">
+      <DependentUpon>CompanyWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\ContractorPurchaseOrderApproval.aspx.cs">
+      <DependentUpon>ContractorPurchaseOrderApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\ContractorPurchaseOrderApproval.aspx.designer.cs">
+      <DependentUpon>ContractorPurchaseOrderApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\SupplierPurchaseOrderApproval.aspx.cs">
+      <DependentUpon>SupplierPurchaseOrderApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\SupplierPurchaseOrderApproval.aspx.designer.cs">
+      <DependentUpon>SupplierPurchaseOrderApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\ViewCompanyWorkOrder.aspx.cs">
+      <DependentUpon>ViewCompanyWorkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\ViewCompanyWorkOrder.aspx.designer.cs">
+      <DependentUpon>ViewCompanyWorkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\ViewContractorPurchaseOrder.aspx.cs">
+      <DependentUpon>ViewContractorPurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\ViewContractorPurchaseOrder.aspx.designer.cs">
+      <DependentUpon>ViewContractorPurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\ViewSupplierPurchaseOrder.aspx.cs">
+      <DependentUpon>ViewSupplierPurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\ViewSupplierPurchaseOrder.aspx.designer.cs">
+      <DependentUpon>ViewSupplierPurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\DemandIssueVoucher.aspx.cs">
+      <DependentUpon>DemandIssueVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\DemandIssueVoucher.aspx.designer.cs">
+      <DependentUpon>DemandIssueVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\IssuingMaterial.aspx.cs">
+      <DependentUpon>IssuingMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\IssuingMaterial.aspx.designer.cs">
+      <DependentUpon>IssuingMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ERP.Master.cs">
+      <DependentUpon>ERP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\ERP.Master.designer.cs">
+      <DependentUpon>ERP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\ContractorPayment.aspx.cs">
+      <DependentUpon>ContractorPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\ContractorPayment.aspx.designer.cs">
+      <DependentUpon>ContractorPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\SupplierPayment.aspx.cs">
+      <DependentUpon>SupplierPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\SupplierPayment.aspx.designer.cs">
+      <DependentUpon>SupplierPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseOrder\ContractorPO WorkFlow.aspx.cs">
+      <DependentUpon>ContractorPO WorkFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\ContractorPO WorkFlow.aspx.designer.cs">
+      <DependentUpon>ContractorPO WorkFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\ContractorPurchaseOrder.aspx.cs">
+      <DependentUpon>ContractorPurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\ContractorPurchaseOrder.aspx.designer.cs">
+      <DependentUpon>ContractorPurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\DeliverySechedule.aspx.cs">
+      <DependentUpon>DeliverySechedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\DeliverySechedule.aspx.designer.cs">
+      <DependentUpon>DeliverySechedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\SupplierPOWorkFlow.aspx.cs">
+      <DependentUpon>SupplierPOWorkFlow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\SupplierPOWorkFlow.aspx.designer.cs">
+      <DependentUpon>SupplierPOWorkFlow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseOrder\SupplierPurchaseOrder.aspx.cs">
+      <DependentUpon>SupplierPurchaseOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder\SupplierPurchaseOrder.aspx.designer.cs">
+      <DependentUpon>SupplierPurchaseOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewDemandIssueVoucher.aspx.cs">
+      <DependentUpon>ViewDemandIssueVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewDemandIssueVoucher.aspx.designer.cs">
+      <DependentUpon>ViewDemandIssueVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewIssueMaterial.aspx.cs">
+      <DependentUpon>ViewIssueMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewIssueMaterial.aspx.designer.cs">
+      <DependentUpon>ViewIssueMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewIssueMaterialVoucher.aspx.cs">
+      <DependentUpon>ViewIssueMaterialVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewIssueMaterialVoucher.aspx.designer.cs">
+      <DependentUpon>ViewIssueMaterialVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewReturnMaterial.aspx.cs">
+      <DependentUpon>ViewReturnMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewReturnMaterial.aspx.designer.cs">
+      <DependentUpon>ViewReturnMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ViewSupplierReceiveMaterial.aspx.cs">
+      <DependentUpon>ViewSupplierReceiveMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ViewSupplierReceiveMaterial.aspx.designer.cs">
+      <DependentUpon>ViewSupplierReceiveMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quality\ReturnMaterial.aspx.cs">
+      <DependentUpon>ReturnMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\ReturnMaterial.aspx.designer.cs">
+      <DependentUpon>ReturnMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\ContractorQuotation.aspx.cs">
+      <DependentUpon>ContractorQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\ContractorQuotation.aspx.designer.cs">
+      <DependentUpon>ContractorQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\ContractorQuotationApproval.aspx.cs">
+      <DependentUpon>ContractorQuotationApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\ContractorQuotationApproval.aspx.designer.cs">
+      <DependentUpon>ContractorQuotationApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\SupplierQuotation.aspx.cs">
+      <DependentUpon>SupplierQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\SupplierQuotation.aspx.designer.cs">
+      <DependentUpon>SupplierQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\SupplierQuotationApproval.aspx.cs">
+      <DependentUpon>SupplierQuotationApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\SupplierQuotationApproval.aspx.designer.cs">
+      <DependentUpon>SupplierQuotationApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\ViewContractorQuotation.aspx.cs">
+      <DependentUpon>ViewContractorQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\ViewContractorQuotation.aspx.designer.cs">
+      <DependentUpon>ViewContractorQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quotation\ViewSupplierQuotation.aspx.cs">
+      <DependentUpon>ViewSupplierQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotation\ViewSupplierQuotation.aspx.designer.cs">
+      <DependentUpon>ViewSupplierQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\SupplierReceiveMaterial.aspx.cs">
+      <DependentUpon>SupplierReceiveMaterial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quality\SupplierReceiveMaterial.aspx.designer.cs">
+      <DependentUpon>SupplierReceiveMaterial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shared\MessageBox.cs" />
+    <Compile Include="Shared\MessageBoxCore.cs" />
+    <Compile Include="Shared\ValidationExpression.cs" />
+    <Compile Include="SSRReport\AdvanceContractorInvoiceReport.aspx.cs">
+      <DependentUpon>AdvanceContractorInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\AdvanceContractorInvoiceReport.aspx.designer.cs">
+      <DependentUpon>AdvanceContractorInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\AdvanceSupplierInvoiceReport.aspx.cs">
+      <DependentUpon>AdvanceSupplierInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\AdvanceSupplierInvoiceReport.aspx.designer.cs">
+      <DependentUpon>AdvanceSupplierInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\CompanyWorkOrderReport.aspx.cs">
+      <DependentUpon>CompanyWorkOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\CompanyWorkOrderReport.aspx.designer.cs">
+      <DependentUpon>CompanyWorkOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ContractorInvoiceReport.aspx.cs">
+      <DependentUpon>ContractorInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ContractorInvoiceReport.aspx.designer.cs">
+      <DependentUpon>ContractorInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ContractorPayment.aspx.cs">
+      <DependentUpon>ContractorPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ContractorPayment.aspx.designer.cs">
+      <DependentUpon>ContractorPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ContractorQuotation.aspx.cs">
+      <DependentUpon>ContractorQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ContractorQuotation.aspx.designer.cs">
+      <DependentUpon>ContractorQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ContractorWorkOrderReport.aspx.cs">
+      <DependentUpon>ContractorWorkOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ContractorWorkOrderReport.aspx.designer.cs">
+      <DependentUpon>ContractorWorkOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\IssueDemandVoucherReport.aspx.cs">
+      <DependentUpon>IssueDemandVoucherReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\IssueDemandVoucherReport.aspx.designer.cs">
+      <DependentUpon>IssueDemandVoucherReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\IssueMaterialReport.aspx.cs">
+      <DependentUpon>IssueMaterialReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\IssueMaterialReport.aspx.designer.cs">
+      <DependentUpon>IssueMaterialReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ItemDetail.aspx.cs">
+      <DependentUpon>ItemDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ItemDetail.aspx.designer.cs">
+      <DependentUpon>ItemDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ItemDetailsReport.aspx.cs">
+      <DependentUpon>ItemDetailsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ItemDetailsReport.aspx.designer.cs">
+      <DependentUpon>ItemDetailsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ItemStockRpt.aspx.cs">
+      <DependentUpon>ItemStockRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ItemStockRpt.aspx.designer.cs">
+      <DependentUpon>ItemStockRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\MaterialConsumptionNote.aspx.cs">
+      <DependentUpon>MaterialConsumptionNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\MaterialConsumptionNote.aspx.designer.cs">
+      <DependentUpon>MaterialConsumptionNote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\PaymentAdvice.aspx.cs">
+      <DependentUpon>PaymentAdvice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\PaymentAdvice.aspx.designer.cs">
+      <DependentUpon>PaymentAdvice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\PendingContractorPaymentRpt.aspx.cs">
+      <DependentUpon>PendingContractorPaymentRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\PendingContractorPaymentRpt.aspx.designer.cs">
+      <DependentUpon>PendingContractorPaymentRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\PendingSupplierPaymentRpt.aspx.cs">
+      <DependentUpon>PendingSupplierPaymentRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\PendingSupplierPaymentRpt.aspx.designer.cs">
+      <DependentUpon>PendingSupplierPaymentRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\RateCardReport.aspx.cs">
+      <DependentUpon>RateCardReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\RateCardReport.aspx.designer.cs">
+      <DependentUpon>RateCardReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ReceiveMaterialCWORpt.aspx.cs">
+      <DependentUpon>ReceiveMaterialCWORpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ReceiveMaterialCWORpt.aspx.designer.cs">
+      <DependentUpon>ReceiveMaterialCWORpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ReceiveMaterialReport.aspx.cs">
+      <DependentUpon>ReceiveMaterialReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ReceiveMaterialReport.aspx.designer.cs">
+      <DependentUpon>ReceiveMaterialReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ReconsilationRpt.aspx.cs">
+      <DependentUpon>ReconsilationRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ReconsilationRpt.aspx.designer.cs">
+      <DependentUpon>ReconsilationRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ReturnMaterialContractorRpt.aspx.cs">
+      <DependentUpon>ReturnMaterialContractorRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ReturnMaterialContractorRpt.aspx.designer.cs">
+      <DependentUpon>ReturnMaterialContractorRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\ReturnMaterialRpt.aspx.cs">
+      <DependentUpon>ReturnMaterialRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\ReturnMaterialRpt.aspx.designer.cs">
+      <DependentUpon>ReturnMaterialRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\SupplierInvoiceReport.aspx.cs">
+      <DependentUpon>SupplierInvoiceReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\SupplierInvoiceReport.aspx.designer.cs">
+      <DependentUpon>SupplierInvoiceReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\SupplierPayment.aspx.cs">
+      <DependentUpon>SupplierPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\SupplierPayment.aspx.designer.cs">
+      <DependentUpon>SupplierPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\SupplierPurchaseOrderReport.aspx.cs">
+      <DependentUpon>SupplierPurchaseOrderReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\SupplierPurchaseOrderReport.aspx.designer.cs">
+      <DependentUpon>SupplierPurchaseOrderReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SSRReport\SupplierQuotation.aspx.cs">
+      <DependentUpon>SupplierQuotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SSRReport\SupplierQuotation.aspx.designer.cs">
+      <DependentUpon>SupplierQuotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Control.aspx.cs">
+      <DependentUpon>Test_Control.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test_Control.aspx.designer.cs">
+      <DependentUpon>Test_Control.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BankGuaranteeDoc\" />
+    <Folder Include="ExcelFile\" />
+    <Folder Include="PaymentDocs\" />
+    <Folder Include="Upload_Documents\2013\CompanyWorkOrder\" />
+    <Folder Include="Upload_Documents\2013\ContractorInvoice\" />
+    <Folder Include="Upload_Documents\2013\ContractorPayment\" />
+    <Folder Include="Upload_Documents\2013\SupplierInvoice\" />
+    <Folder Include="Upload_Documents\2013\SupplierPayment\" />
+    <Folder Include="Upload_Documents\2013\SupplierQuotation\" />
+    <Folder Include="Upload_Documents\2013\Test_Control\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Masters\ERP.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessAccessLayer\BusinessAccessLayer.csproj">
+      <Project>{1FC85C25-34EB-4FBB-92AC-AD288AFE13BB}</Project>
+      <Name>BusinessAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{571293CD-713B-4C54-A43D-E57DD84300C4}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DocumentObjectModel\DocumentObjectModel.csproj">
+      <Project>{3C4C21D4-22F6-4136-9F50-CD0FABE899BE}</Project>
+      <Name>DocumentObjectModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Web.config" />
+    <None Include="pdf\ContractorWork.pdf" />
+    <None Include="pdf\PurchaseOrder.pdf" />
+    <None Include="pdf\Quotation.pdf" />
+    <None Include="Properties\PublishProfiles\Shanvi_Construction_Build.pubxml" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1272_1.docx" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1311_1.xls" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1312_5.docx" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1313_1.docx" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1314_5.xls" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1326_1.docx" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1352_1.xls" />
+    <None Include="Upload_Documents\2013\ContractorQuotation\1353_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1286_1.docx" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1287_1.docx" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1287_2.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1325_1.docx" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1333_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1341_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1348_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1348_2.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1348_3.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1349_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1350_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1350_2.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1355_1.xls" />
+    <None Include="Upload_Documents\2013\SupplierReceiveMaterial\1356_1.docx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3775</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

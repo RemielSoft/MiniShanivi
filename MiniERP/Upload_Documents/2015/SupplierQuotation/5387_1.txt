@@ -1,0 +1,32 @@
+-----------------------------------Find all Function in Database----------------------
+
+SELECT * FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_TYPE = 'FUNCTION'
+
+
+-----------------------------------Find all PROCEDURE in Database----------------------
+
+SELECT * FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_TYPE = 'PROCEDURE'
+
+
+---------------------------------Add Default Value Of the column in Table -------------
+
+alter table Master_Item_Stock
+add Store_Id int NOT NULL DEFAULT (1) , 
+Brand_Id int null
+
+---------------------------------inserting record from one table to another table  sql 2008-----------
+
+
+  INSERT INTO [dbo].[Master_Item_Brand_Mapping]
+           ([Item_Model_Mapping_Id]
+           ,[Brand_Id]
+           ,[Is_Deleted]
+           ,[Created_By]
+           ,[Created_Date]
+           ,[Modified_By]
+           ,[Modified_Date])
+
+ SELECT Item_Model_Mapping_Id, 1,0,'Admin',Getdate(),null,null  from [Master_Item_Specification_Mapping]
+
+
+
